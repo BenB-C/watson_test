@@ -1,0 +1,21 @@
+<% if @personality_results %>
+  <h1>Personality Profile</h1>
+  <table>
+  <% @personality_results.each_pair do |trait, percentile| %>
+    <tr>
+      <td><%= trait %></td><td><%= percentile %></td>
+    </tr>
+  <% end %>
+  </table>
+<% end %>
+
+<% if @tone_results %>
+  <h1>Tone</h1>
+  <table>
+  <% @tone_results.each_pair do |tone_name, percentile| %>
+    <tr>
+      <td><%= tone_name %></td><td><%= percentile %></td>
+    </tr>
+  <% end %>
+  </table>
+<% end %>

@@ -1,0 +1,5 @@
+<%= form_with(url: "/analyse", method: "get") do %>
+  <%= label_tag(:lyrics, "Lyrics:") %><br>
+  <%= text_area_tag(:lyrics, "", size: "100x25") %><br>
+  <%= submit_tag("Submit") %>
+<% end %>
